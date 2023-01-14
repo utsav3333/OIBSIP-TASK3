@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="top">
+            <h1>Temperature-Converter-website</h1>
+            <br>
+            <p>This is a website which converts one type of temperature to the other type of temperature.</p>
+        </div>
+    </header>
+
+  
+    <!-- body -->
+    <section class="container">
+        <form onsubmit="calcTemp();return false;">
+            <label for="temp">Please enter temperature value and the type of temperature it is : </label>
+            <input type="number" name="temp" id="temp" step="any" value="0.0">
+            
+
+            <select id="givenscale" name="givenscale" >
+                <option style="display:none;" selected disabled>Choose type</option>
+                <option value="°C">Celcius</option>
+                <option value="°F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <br>
+
+            <label for="tempscale">Choose the temp type you need to convert to:</label>
+            <select id="tempscale" name="tempscale">
+                <option style="display:none;" selected disabled>Choose type</option>
+                <option value="°C">Celcius</option>
+                <option value="°F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <br>
+
+            <input type="submit" name="temp" id="submitbtn" value="Convert">
+            <input type="reset" name="temp" id="submitbtn" value="Reset">
+         
+            <div id="resultContainer"></div>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+        <p>© 2022 Temp-converter™. All Rights Reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
