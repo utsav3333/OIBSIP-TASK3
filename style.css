@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    text-align: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZ9B-NniJjueNezkTmHR_23dplW1nL2_zfdliAFVH&s"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+header{
+    padding: 20px;
+    background: rgba(109, 13, 13, 0.7);
+}
+
+header h1{
+    color:goldenrod;
+}
+
+header p{
+    color:wheat;
+    font-size: larger;
+}
+
+
+.container{
+    display: inline-block;
+    /* position: relative; */
+    width: 600px;
+    min-width: 200px;
+    background-color:black;
+    margin: 20px 50px;
+    padding: 20px;
+    border-radius: none; 
+    border: 3px solid goldenrod;
+    
+}
+
+label{
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: sans-serif;
+
+}
+
+input{
+    padding: 3px 3px;
+    margin: 10px;
+    border-radius: 2px;
+    border-color: whitesmoke;
+    transition: .3s border-color;
+}
+
+input:hover{
+    border-color: rgb(61, 16, 224);
+}
+
+#temp{
+    height: 25px;
+    width: 60px;
+}
+
+select:hover{
+    height: 25px;
+    width: fit-content;
+    margin: 10px;
+    border-radius: none;
+    border-color: rgb(61, 16, 224);
+}
+
+#submitbtn:hover{
+    height: 2.5rem;
+    width: 7rem;
+    color: whitesmoke;
+    background-color: goldenrod;
+    border-radius: none;
+    border-color: whitesmoke;
+    font-size: 20px;  
+}
+
+#resultContainer{
+    margin: 15px 15px;
+    padding: 15px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    border-radius: none;
+    border-color:whitesmoke;
+    border: 3px solid black; 
+}
+#resultContainer:hover{
+    border-color: rgb(61, 16, 224);
+}
+
+#footer {
+    position: fixed;
+    color: goldenrod;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
